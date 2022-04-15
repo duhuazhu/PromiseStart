@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+        function rand(m,n) {
+            return Math.ceil(Math.random() * (n-m+1))+ m- 1;
+        }
+        const  p = new Promise((resolve, reject)=>{
+            let n  = rand(1,100);
+            if(n <=30){
+                resolve()
+            }else{
+                reject()
+            }
+        })
+        p.then(()=>{
+            console.log('中奖');
+        },()=>{
+            console.log('没中奖');
+        })
+</script>
+</body>
+</html>
