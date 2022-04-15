@@ -1,0 +1,19 @@
+{
+  "name": "promisestart",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/duhuazhu/PromiseStart.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/duhuazhu/PromiseStart/issues"
+  },
+  "homepage": "https://github.com/duhuazhu/PromiseStart#readme"
+}

@@ -13,15 +13,15 @@
         const  p = new Promise((resolve, reject)=>{
             let n  = rand(1,100);
             if(n <=30){
-                resolve()
+                resolve(n)
             }else{
-                reject()
+                reject(n)
             }
         })
-        p.then(()=>{
-            console.log('中奖');
-        },()=>{
-            console.log('没中奖');
+        p.then((value)=>{
+            console.log('中奖',value);
+        },(reason)=>{
+            console.log('没中奖',reason);
         })
 </script>
 </body>
