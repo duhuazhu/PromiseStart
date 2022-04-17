@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  // let p1 =Promise.reject(123);
+
+  /*let p2 =Promise.resolve(new Promise((resolve, reject) => {
+      reject('error')
+  }))
+  // console.log(p2);
+  p2.catch((reason)=>{
+      console.log(reason);
+  })*/
+
+  let p3= Promise.reject(new Promise((resolve, reject) => {
+      resolve('ok')
+  }))
+  console.log(p3);
+</script>
+</body>
+</html>

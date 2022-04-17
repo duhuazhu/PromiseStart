@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let p1 = new Promise((resolve, reject) => {
+      setTimeout(()=>{
+          reject('ok1')
+      },1000);
+
+      // throw  '出问题了'
+  })
+  let p2 = Promise.resolve('ok2')
+  let p3 = Promise.reject('ok3')
+
+  const result =  Promise.race([p1,p2,p3])
+  console.log(result);
+
+</script>
+</body>
+</html>
